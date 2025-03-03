@@ -6,14 +6,39 @@
     <title>Document</title>
 </head>
 <body>
+    <header>
+
+        <form >
+            <input type= "search" placeholder="please enter the city" required>
+            <input type= "submit" value = "search">
+        </form>
+    </header>
     
+    <main>
+
+        <div class="current-weather">
+            <div>
+              <h1 class="current-city" id="current-city">Bulawayo</h1>
+              <p class="current-details">
+                <span id="current-date"></span>, moderate rain <br />
+                Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+              </p>
+            </div>
+            <div class="current-temperature">
+              <span class="current-temperature-icon">☀️</span
+              ><span class="current-temperature-value" id="current-temperature"
+                >24</span
+              ><span class="current-temperature-unit">°C</span>
+            </div>
+          </div>
+    </main>
 
     <footer>
         <p>
             This project was coded by
             <a href="https://github.com//MemoryDube807" target="_blank">Memory Dube</a> and is
             <a href="https://github.com/MemoryDube807/weather_app_project" target="_blank"> on GitHub</a> and
-            <a href="https://memory-dube-weather-app.netlify.app/" target="_blank">hosted on Netlify</a>
+            <a href="https://memo-weather.netlify.app/" target="_blank">hosted on Netlify</a>
         </p>
     </footer>
 </body>
