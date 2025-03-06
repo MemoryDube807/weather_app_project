@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
     <title>Document</title>
+    
 </head>
 <body>
     <header>
 
-        <form >
-            <input type= "search" placeholder="please enter the city" required>
-            <input type= "submit" value = "search">
-        </form>
+      <form id="search-form">
+        <input
+          type="search"
+          placeholder="Enter a city.."
+          required
+          class="search-input"
+          id="search-input"
+        />
+        <input type="submit" value="Search" class="search-button" id="searchinput" />
+      </form>
+
     </header>
     
     <main>
@@ -20,7 +29,7 @@
             <div>
               <h1 class="current-city" id="current-city">Bulawayo</h1>
               <p class="current-details">
-                <span id="current-date"></span>, moderate rain <br />
+                <span id="current-date"></span>moderate rain <br />
                 Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
               </p>
             </div>
@@ -31,6 +40,8 @@
               ><span class="current-temperature-unit">°C</span>
             </div>
           </div>
+
+          <script>src="src/index.js"</script>
     </main>
 
     <footer>
