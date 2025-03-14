@@ -1,56 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
     <title>Document</title>
-    
-</head>
-<body>
-    <header>
+  </head>
+  <body>
+    <div class="weather-app" id="weather-app">
+      <header>
+        <h1>Weather App</h1>
 
-      <form id="search-form">
-        <input
-          type="search"
-          placeholder="Enter a city.."
-          required
-          class="search-input"
-          id="search-input"
-        />
-        <input type="submit" value="Search" class="search-button" id="searchinput" />
-      </form>
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-input"
+            id="search-form-input"
+          />
+          <input
+            type="submit"
+            value="Search"
+            class="search-button"
+            id="searchinput"
+          />
+        </form>
+      </header>
 
-    </header>
-    
-    <main>
-
+      <main>
         <div class="current-weather">
-            <div>
-              <h1 class="current-city" id="current-city">Bulawayo</h1>
-              <p class="current-details">
-                <span id="current-date"></span>moderate rain <br />
-                Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
-              </p>
-            </div>
-            <div class="current-temperature">
-              <span class="current-temperature-icon">☀️</span
-              ><span class="current-temperature-value" id="current-temperature"
-                >24</span
-              ><span class="current-temperature-unit">°C</span>
-            </div>
+          <div>
+            <h1 class="current-city" id="current-city">Bulawayo</h1>
+            <p class="current-details">
+              <span id="current-date"></span>moderate rain <br />
+              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+            </p>
           </div>
+          <div class="current-temperature">
+            <span class="current-temperature-icon">☀️</span
+            ><span class="current-temperature-value" id="current-temperature"
+              >24</span
+            ><span class="current-temperature-unit">°C</span>
+          </div>
+        </div>
+      </main>
 
-          <script>src="src/index.js"</script>
-    </main>
-
-    <footer>
+      <footer>
         <p>
-            This project was coded by
-            <a href="https://github.com//MemoryDube807" target="_blank">Memory Dube</a> and is
-            <a href="https://github.com/MemoryDube807/weather_app_project" target="_blank"> on GitHub</a> and
-            <a href="https://memo-weather.netlify.app/" target="_blank">hosted on Netlify</a>
+          This project was coded by
+          <a href="https://github.com//MemoryDube807" target="_blank"
+            >Memory Dube</a
+          >
+          and is
+          <a
+            href="https://github.com/MemoryDube807/weather_app_project"
+            target="_blank"
+          >
+            on GitHub</a
+          >
+          and
+          <a href="https://memo-weather.netlify.app/" target="_blank"
+            >hosted on Netlify</a
+          >
         </p>
-    </footer>
-</body>
+      </footer>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
 </html>
