@@ -1,5 +1,5 @@
 body {
-  background: #E6E6FA;
+  background: #e6e6fa;
   font-family: "Roboto", sans-serif;
 }
 .weather-app {
@@ -91,8 +91,9 @@ main {
 }
 
 .current-temperature-icon {
-  font-size: 40px;
-  margin-top: 22px;
+  width: 90px;
+  height: 90px;
+  margin-bottom: 30px;
 }
 .current-temperature-value {
   font-size: 80px;
