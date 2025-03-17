@@ -62,4 +62,4 @@ if (searchForm) {
 }
 
 // Default city
-searchCity("Bulawayo");
+searchCity("Nkayi");
