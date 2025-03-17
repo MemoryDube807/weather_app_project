@@ -12,12 +12,13 @@ body {
 }
 
 h1 {
-  font-size: 25px;
-  color: #000000;
-  font-weight: bold;
-  margin: 0;
+  font-family: "Pacifico", cursive; /* Fancy handwritten font */
+  font-size: 3rem; /* Large and eye-catching */
+   color: #5a189a;
+  text-shadow: 2px 2px 5px rgba(255, 105, 180, 0.5); /* Soft pink glow */
   text-align: center;
-  margin-top: 0;
+  margin-top: 5px;
+
 }
 
 .current-city {
