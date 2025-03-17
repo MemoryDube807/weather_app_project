@@ -1,9 +1,9 @@
 body {
-  background: #b2b0b4;
+  background: #E6E6FA;
   font-family: "Roboto", sans-serif;
 }
 .weather-app {
-  background: rgb(243, 233, 233);
+  background: #da69ba;
   max-width: 600px;
   margin: 60px auto;
   padding: 30px;
@@ -34,7 +34,7 @@ header {
 }
 
 .search-input {
-  background-color: #b2b0b4;
+  background-color: #d5c8e1;
   border: none;
   color: rgb(1, 6, 5);
   font-size: 16px;
@@ -46,7 +46,7 @@ header {
 .search-button {
   margin-left: 5px;
   font-size: 16px;
-  background-color: #b2b0b4;
+  background-color: #d0c5db;
   border: none;
   color: #000000;
   border: none;
@@ -57,7 +57,7 @@ header {
 
 footer {
   background: #f9f7fe;
-  color: #b2b0b4;
+  color: #51089b;
   bottom: 0;
   padding-top: 30px 0 0 0;
   border-top: 1px solid;
@@ -76,7 +76,7 @@ main {
 }
 .current-details {
   font-size: 16px;
-  color: rgba(65, 50, 100, 1);
+  color: rgb(86, 48, 175);
   line-height: 20px;
   text-align: justify;
   font-weight: 500px;
