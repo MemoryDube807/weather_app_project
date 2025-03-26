@@ -6,7 +6,6 @@ body {
   transition: background-color 0.5s ease-in-out; /* Smooth transition for color changes */
 }
 
-
 header {
   text-align: center;
   padding: 20px;
@@ -139,7 +138,8 @@ footer {
     align-items: center;
   }
 
-  .current-city-details, .current-temperature {
+  .current-city-details,
+  .current-temperature {
     text-align: center;
   }
 }
