@@ -1,5 +1,5 @@
 body {
-  background: #ebb7e7;
+  background: #e1d1e0;
   font-family: "Roboto", sans-serif;
 }
 .weather-app {
@@ -8,14 +8,14 @@ body {
   margin: 60px auto;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  box-shadow: 0 30px 50px rgba(100, 50, 100, 0.08);
 }
 
 h1 {
-  font-family: "Pacifico", cursive; /* Fancy handwritten font */
-  font-size: 3rem; /* Large and eye-catching */
-  color: #5a189a;
-  text-shadow: 2px 2px 5px rgba(237, 70, 217, 0.5); /* Soft pink glow */
+  font-family: "Pacifico", cursive;
+  font-size: 3rem;
+  color: #9b0891;
+  text-shadow: 2px 2px 5px rgba(212, 49, 193, 0.5);
   text-align: center;
   margin-top: 5px;
 }
@@ -46,9 +46,9 @@ header {
 .search-button {
   margin-left: 5px;
   font-size: 16px;
-  background-color: #d0c5db;
+  background-color: #9b0891;
   border: none;
-  color: #000000;
+  color: white;
   border: none;
   padding: 20px;
   line-height: 1;
@@ -57,7 +57,7 @@ header {
 
 footer {
   background: #f9f7fe;
-  color: #51089b;
+  color: #9b0891;
   bottom: 0;
   padding-top: 30px 0 0 0;
   border-top: 1px solid;
@@ -76,7 +76,7 @@ main {
 }
 .current-details {
   font-size: 16px;
-  color: rgb(86, 48, 175);
+  color: rgb(21, 7, 20);
   line-height: 20px;
   text-align: left;
   font-weight: 500px;
@@ -86,7 +86,7 @@ main {
 }
 .current-details strong {
   font-size: 15px;
-  color: rgb(180, 8, 114);
+  color: #ca0e92;
 }
 
 .current-temperature {
@@ -117,24 +117,23 @@ main {
 
 .weather-forecast-date {
   font-size: 14px;
-  color: rgb(39, 33, 66, 0.5);
+  color: rgba(11, 1, 10, 0.5);
   line-height: 20px;
   text-align: center;
   font-weight: 500px;
   margin-bottom: 20;
 }
-.weather-forecast-icon{
+.weather-forecast-icon {
   font-size: 30px;
   text-align: center;
 }
-.weather-forecast-temperatures{
- text-align: center;
- margin-top: 10px;
- display: flex;
- justify-content: center;
- color: #780326;
+.weather-forecast-temperatures {
+  text-align: center;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  color: #ca0e92;
 }
-.weather-forecast-temperature{
+.weather-forecast-temperature {
   padding: 0 10px;
 }
-
