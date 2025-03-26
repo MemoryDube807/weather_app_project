@@ -122,3 +122,24 @@ footer {
   background: #fad0c4;
   transform: scale(1.1);
 }
+
+/* Adjust layout for smaller screens */
+@media (max-width: 768px) {
+  .search-input {
+    width: 90%;
+  }
+
+  .weather-forecast-day {
+    margin: 5px;
+    padding: 8px;
+  }
+
+  .current-weather {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .current-city-details, .current-temperature {
+    text-align: center;
+  }
+}

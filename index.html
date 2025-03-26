@@ -8,6 +8,7 @@
     />
     <link rel="stylesheet" href="index.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="manifest" href="manifest.json" />
     <title>Document</title>
   </head>
   <body>
@@ -82,5 +83,12 @@
     <button id="back-to-top" class="back-to-top">↑</button>
 
     <script src="index.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("service-worker.js").then(() => {
+          console.log("Service Worker Registered");
+        });
+      }
+    </script>
   </body>
 </html>
