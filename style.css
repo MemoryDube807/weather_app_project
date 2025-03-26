@@ -1,0 +1,124 @@
+/* Add a smooth background transition */
+body {
+  background-color: #f4a3e6; /* Default background color */
+  background-size: cover;
+  background-position: center;
+  transition: background-color 0.5s ease-in-out; /* Smooth transition for color changes */
+}
+
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  color: white;
+  font-family: "Arial", sans-serif;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  width: 70%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-button {
+  padding: 10px 20px; /* Increase padding for touch-friendly buttons */
+  border-radius: 20px;
+  border: none;
+  background: #ff9a9e;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 1rem; /* Larger font size for better readability */
+}
+
+.search-button:hover {
+  background: #fad0c4;
+}
+
+.weather-forecast-day {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.weather-forecast-day:hover {
+  transform: scale(1.05);
+}
+
+.weather-forecast-icon {
+  width: 50px;
+  height: 50px;
+}
+
+/* Add animation to temperature updates */
+.current-temperature-value {
+  display: inline-block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Style the footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to right, #fad0c4, #ff9a9e);
+  color: white;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Remove the loading spinner styles */
+#loading-spinner {
+  display: none;
+}
+
+/* Style the "Back to Top" button */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ff9a9e;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-top:hover {
+  background: #fad0c4;
+  transform: scale(1.1);
+}

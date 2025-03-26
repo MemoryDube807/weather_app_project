@@ -2,77 +2,84 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
     <link rel="stylesheet" href="index.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>Document</title>
   </head>
   <body>
-    <div class="weather-app" id="weather-app">
-      <header>
-        <h1>Pink Forecast</h1>
+    <div class="container">
+      <div class="weather-app" id="weather-app">
+        <header>
+          <h1>Pink Forecast</h1>
 
-        <form id="search-form">
-          <input
-            type="search"
-            placeholder="Enter a city.."
-            required
-            class="search-input"
-            id="search-form-input"
-          />
-          <input
-            type="submit"
-            value="Search"
-            class="search-button"
-            id="searchinput"
-          />
-        </form>
-      </header>
+          <form id="search-form">
+            <input
+              type="search"
+              placeholder="Enter a city.."
+              required
+              class="search-input"
+              id="search-form-input"
+            />
+            <input
+              type="submit"
+              value="Search"
+              class="search-button"
+              id="searchinput"
+            />
+          </form>
+        </header>
 
-      <main>
-        <div class="current-weather">
-          <div class="current-city-details">
-            <h1 class="current-city" id="current-city"></h1>
-            <p class="current-details">
-              <span id="current-date">Tuesday 14:34</span> <br />
-              <span id="rain"> moderate rain</span> <br />
-              Humidity:
-              <strong><span id="humidity"> 87 </span> %</strong>
-              wind:
-              <strong> <span id="wind">7.2</span> km/h </strong>
-            </p>
+        <main>
+          <div class="current-weather">
+            <div class="current-city-details">
+              <h1 class="current-city" id="current-city"></h1>
+              <p class="current-details">
+                <span id="current-date">Tuesday 14:34</span> <br />
+                <span id="rain"> moderate rain</span> <br />
+                Humidity:
+                <strong><span id="humidity"> 87 </span> %</strong>
+                wind:
+                <strong> <span id="wind">7.2</span> km/h </strong>
+              </p>
+            </div>
+            <div class="current-temperature">
+              <span class="current-temperature-icon" id="icon">☀️</span
+              ><span class="current-temperature-value" id="current-temperature"
+                >24</span
+              ><span class="current-temperature-unit">°C</span>
+            </div>
           </div>
-          <div class="current-temperature">
-            <span class="current-temperature-icon" id="icon">☀️</span
-            ><span class="current-temperature-value" id="current-temperature"
-              >24</span
-            ><span class="current-temperature-unit">°C</span>
-          </div>
-        </div>
 
-        <div class="weather-forecast" id="forecast"></div>
-      </main>
+          <div class="weather-forecast" id="forecast"></div>
+        </main>
 
-      <footer>
-        <p>
-          This project was coded by
-          <a href="https://github.com//MemoryDube807" target="_blank"
-            >Memory Dube</a
-          >
-          and is
-          <a
-            href="https://github.com/MemoryDube807/weather_app_project"
-            target="_blank"
-          >
-            on GitHub</a
-          >
-          and
-          <a href="https://memo-weather.netlify.app/" target="_blank"
-            >hosted on Netlify</a
-          >
-        </p>
-      </footer>
+        <footer>
+          <p>
+            This project was coded by
+            <a href="https://github.com//MemoryDube807" target="_blank"
+              >Memory Dube</a
+            >
+            and is
+            <a
+              href="https://github.com/MemoryDube807/weather_app_project"
+              target="_blank"
+            >
+              on GitHub</a
+            >
+            and
+            <a href="https://memo-weather.netlify.app/" target="_blank"
+              >hosted on Netlify</a
+            >
+          </p>
+        </footer>
+      </div>
     </div>
+
+    <button id="back-to-top" class="back-to-top">↑</button>
 
     <script src="index.js"></script>
   </body>

@@ -4,7 +4,7 @@ body {
 }
 .weather-app {
   background: whitesmoke;
-  max-width: 700px;
+  max-width: 800px;
   margin: 60px auto;
   padding: 30px;
   border-radius: 10px;
@@ -124,8 +124,10 @@ main {
   margin-bottom: 20;
 }
 .weather-forecast-icon {
-  font-size: 30px;
-  text-align: center;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  display: block;
 }
 .weather-forecast-temperatures {
   text-align: center;
