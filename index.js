@@ -44,7 +44,9 @@ function formatDate(date) {
 }
 
 function searchCity(city) {
-  let apiUrl = `https://weather-app-project-ungt.onrender.com/api/current?city=${city}`; // Updated to Render URL
+  let apiKey = "609f9oe8a43ce187feb36f8ctad4a8a0"; // Temporarily hardcode the API key
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+
   axios.get(apiUrl).then(showTemperature);
 }
 
@@ -60,7 +62,9 @@ if (searchForm) {
 }
 
 function getForecast(city) {
-  let apiUrl = `https://weather-app-project-ungt.onrender.com/api/forecast?city=${city}`; // Updated to Render URL
+  let apiKey = "609f9oe8a43ce187feb36f8ctad4a8a0"; // Temporarily hardcode the API key
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+
   axios.get(apiUrl).then(displayForecast);
 }
 
