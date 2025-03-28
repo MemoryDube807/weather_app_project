@@ -5,8 +5,11 @@ const cors = require("cors"); // Import CORS middleware
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Enable CORS for all origins
-app.use(cors()); // Allow requests from any origin
+// Enable CORS for specific origin
+const corsOptions = {
+  origin: "https://memo-weather.netlify.app", // Updated to your actual Netlify domain
+};
+app.use(cors(corsOptions)); // Restrict CORS to the Netlify domain
 
 // Serve a default response for the root path
 app.get("/", (req, res) => {
@@ -40,8 +43,17 @@ app.get("/api/current", async (req, res) => {
       time: response.data.location.localtime_epoch,
     });
   } catch (error) {
-    console.error("Error fetching current weather:", error.message); // Log the error
-    res.status(500).json({ error: "Unable to fetch weather data" });
+    console.error(
+      "Error fetching current weather:",
+      error.message,
+      error.response?.data
+    ); // Log detailed error
+    res
+      .status(500)
+      .json({
+        error: "Unable to fetch weather data",
+        details: error.response?.data,
+      });
   }
 });
 
@@ -66,8 +78,17 @@ app.get("/api/forecast", async (req, res) => {
       })),
     });
   } catch (error) {
-    console.error("Error fetching weather forecast:", error.message); // Log the error
-    res.status(500).json({ error: "Unable to fetch forecast data" });
+    console.error(
+      "Error fetching weather forecast:",
+      error.message,
+      error.response?.data
+    ); // Log detailed error
+    res
+      .status(500)
+      .json({
+        error: "Unable to fetch forecast data",
+        details: error.response?.data,
+      });
   }
 });
 
