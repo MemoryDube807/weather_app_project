@@ -44,7 +44,7 @@ function formatDate(date) {
 }
 
 function searchCity(city) {
-  let apiUrl = `https://your-app-name.onrender.com/api/current?city=${city}`; // Update to Render URL
+  let apiUrl = `https://weather-app-project-ungt.onrender.com/api/current?city=${city}`; // Updated to Render URL
   axios.get(apiUrl).then(showTemperature);
 }
 
@@ -60,7 +60,7 @@ if (searchForm) {
 }
 
 function getForecast(city) {
-  let apiUrl = `https://your-app-name.onrender.com/api/forecast?city=${city}`; // Update to Render URL
+  let apiUrl = `https://weather-app-project-ungt.onrender.com/api/forecast?city=${city}`; // Updated to Render URL
   axios.get(apiUrl).then(displayForecast);
 }
 

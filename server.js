@@ -1,7 +1,12 @@
 const express = require("express");
 const axios = require("axios");
+const cors = require("cors"); // Import CORS middleware
+
 const app = express();
 const port = process.env.PORT || 3000;
+
+// Enable CORS for all origins
+app.use(cors()); // Allow requests from any origin
 
 // Endpoint to get current weather
 app.get("/api/current", async (req, res) => {
