@@ -1,6 +1,3 @@
-// Load environment variables
-require("dotenv").config();
-
 function showTemperature(response) {
   let temperatureElement = document.querySelector("#current-temperature");
   let cityElement = document.querySelector("#current-city");
@@ -47,10 +44,11 @@ function formatDate(date) {
 }
 
 function searchCity(city) {
-  let apiKey = process.env.SHECODES_API_KEY; // Use the API key from .env
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+  let apiUrl = `http://localhost:3000/api/current?city=${city}`; // Call the backend server
 
-  axios.get(apiUrl).then(showTemperature);
+  axios.get(apiUrl).then((response) => {
+    showTemperature(response);
+  });
 }
 
 function handleSearch(event) {
@@ -65,10 +63,11 @@ if (searchForm) {
 }
 
 function getForecast(city) {
-  let apiKey = process.env.SHECODES_API_KEY; // Use the API key from .env
-  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  let apiUrl = `http://localhost:3000/api/forecast?city=${city}`; // Call the backend server
 
-  axios.get(apiUrl).then(displayForecast);
+  axios.get(apiUrl).then((response) => {
+    displayForecast(response);
+  });
 }
 
 function displayForecast(response) {
