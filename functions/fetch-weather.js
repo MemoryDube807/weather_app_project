@@ -1,8 +1,7 @@
 const axios = require("axios");
-require("dotenv").config(); // Load environment variables from .env
 
 exports.handler = async (event) => {
-  const apiKey = process.env.SHECODES_API_KEY; // Use the API key from .env
+  const apiKey = process.env.SHECODES_API_KEY; // Use the API key from Netlify environment variables
   const { city, type } = event.queryStringParameters;
 
   let apiUrl;

@@ -44,11 +44,8 @@ function formatDate(date) {
 }
 
 function searchCity(city) {
-  let apiUrl = `http://localhost:3000/api/current?city=${city}`; // Call the backend server
-
-  axios.get(apiUrl).then((response) => {
-    showTemperature(response);
-  });
+  let apiUrl = `https://your-app-name.onrender.com/api/current?city=${city}`; // Update to Render URL
+  axios.get(apiUrl).then(showTemperature);
 }
 
 function handleSearch(event) {
@@ -63,11 +60,8 @@ if (searchForm) {
 }
 
 function getForecast(city) {
-  let apiUrl = `http://localhost:3000/api/forecast?city=${city}`; // Call the backend server
-
-  axios.get(apiUrl).then((response) => {
-    displayForecast(response);
-  });
+  let apiUrl = `https://your-app-name.onrender.com/api/forecast?city=${city}`; // Update to Render URL
+  axios.get(apiUrl).then(displayForecast);
 }
 
 function displayForecast(response) {
