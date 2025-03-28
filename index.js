@@ -1,5 +1,5 @@
 // Load environment variables
-require('dotenv').config();
+require("dotenv").config();
 
 function showTemperature(response) {
   let temperatureElement = document.querySelector("#current-temperature");
