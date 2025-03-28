@@ -10,6 +10,7 @@ app.use(cors()); // Allow requests from any origin
 
 // Serve a default response for the root path
 app.get("/", (req, res) => {
+  console.log("Root endpoint accessed"); // Log when the root endpoint is accessed
   res.send(
     "Weather App Backend is running. Use /api/current or /api/forecast endpoints."
   );
@@ -72,5 +73,5 @@ app.get("/api/forecast", async (req, res) => {
 
 // Start the server
 app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+  console.log(`Server is running on port ${port}`); // Updated log message for clarity
 });
