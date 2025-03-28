@@ -8,6 +8,13 @@ const port = process.env.PORT || 3000;
 // Enable CORS for all origins
 app.use(cors()); // Allow requests from any origin
 
+// Serve a default response for the root path
+app.get("/", (req, res) => {
+  res.send(
+    "Weather App Backend is running. Use /api/current or /api/forecast endpoints."
+  );
+});
+
 // Endpoint to get current weather
 app.get("/api/current", async (req, res) => {
   const city = req.query.city;
@@ -32,6 +39,7 @@ app.get("/api/current", async (req, res) => {
       time: response.data.location.localtime_epoch,
     });
   } catch (error) {
+    console.error("Error fetching current weather:", error.message); // Log the error
     res.status(500).json({ error: "Unable to fetch weather data" });
   }
 });
@@ -57,6 +65,7 @@ app.get("/api/forecast", async (req, res) => {
       })),
     });
   } catch (error) {
+    console.error("Error fetching weather forecast:", error.message); // Log the error
     res.status(500).json({ error: "Unable to fetch forecast data" });
   }
 });
