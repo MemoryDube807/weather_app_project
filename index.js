@@ -1,4 +1,5 @@
 function showTemperature(response) {
+  console.log("Weather data received:", response.data); // Log the weather data
   let temperatureElement = document.querySelector("#current-temperature");
   let cityElement = document.querySelector("#current-city");
   let rainElement = document.querySelector("#rain");
@@ -65,6 +66,7 @@ function getForecast(city) {
 }
 
 function displayForecast(response) {
+  console.log("Forecast data received:", response.data); // Log the forecast data
   let forecastHtml = "";
 
   response.data.daily.forEach(function (day, index) {
@@ -108,7 +110,6 @@ async function getApiKey() {
     console.error("Error fetching API key:", error);
   }
 }
-
 
 getApiKey().then((apiKey) => {
   if (apiKey) {
