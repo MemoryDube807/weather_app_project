@@ -13,6 +13,10 @@ CORS(app)  # Enable CORS for all routes
 # Get the API key from the environment variable
 API_KEY = os.getenv("API_KEY")
 
+@app.route("/", methods=["GET"])
+def home():
+    return jsonify({"message": "Welcome to the Weather API!"})
+
 @app.route("/weather", methods=["GET"])
 def get_weather():
     city = request.args.get("city")
