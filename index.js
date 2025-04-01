@@ -1,3 +1,5 @@
+import { API_KEY } from "./config.js";
+
 function showTemperature(response) {
   let temperatureElement = document.querySelector("#current-temperature");
   let cityElement = document.querySelector("#current-city");
@@ -44,9 +46,7 @@ function formatDate(date) {
 }
 
 function searchCity(city) {
-  let apiKey = "609f9oe8a43ce187feb36f8ctad4a8a0"; // Temporarily hardcode the API key
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
-
+  let apiUrl = `https://your-app.onrender.com/weather?city=${city}`;
   axios.get(apiUrl).then(showTemperature);
 }
 
@@ -62,9 +62,7 @@ if (searchForm) {
 }
 
 function getForecast(city) {
-  let apiKey = "609f9oe8a43ce187feb36f8ctad4a8a0"; // Temporarily hardcode the API key
-  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
-
+  let apiUrl = `https://your-app.onrender.com/forecast?city=${city}`;
   axios.get(apiUrl).then(displayForecast);
 }
 
