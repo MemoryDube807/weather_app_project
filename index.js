@@ -44,7 +44,7 @@ function formatDate(date) {
 }
 
 function searchCity(city) {
-  let apiUrl = `https://weather-app-project-7req.onrender.com/weather?city=${city}`;
+  let apiUrl = `https://weather-app-project-7req.onrender.com/weather?city=${city}`; // Ensure HTTPS
   axios.get(apiUrl).then(showTemperature);
 }
 
@@ -60,7 +60,7 @@ if (searchForm) {
 }
 
 function getForecast(city) {
-  let apiUrl = `https://weather-app-project-7req.onrender.com/forecast?city=${city}`;
+  let apiUrl = `https://weather-app-project-7req.onrender.com/forecast?city=${city}`; // Ensure HTTPS
   axios.get(apiUrl).then(displayForecast);
 }
 
