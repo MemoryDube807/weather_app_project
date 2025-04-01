@@ -93,6 +93,30 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHtml;
 }
 
+// Fetch the API key from the deployed backend server
+async function getApiKey() {
+  try {
+    const response = await fetch(
+      "https://weather-app-project-7req.onrender.com/get-api-key"
+    ); // Use deployed backend URL
+    if (!response.ok) {
+      throw new Error("Failed to fetch API key");
+    }
+    const data = await response.json();
+    return data.apiKey; // Ensure the backend returns { apiKey: "your_api_key" }
+  } catch (error) {
+    console.error("Error fetching API key:", error);
+  }
+}
+
+// Example usage
+getApiKey().then((apiKey) => {
+  if (apiKey) {
+    console.log("API Key:", apiKey);
+    // Use the API key in your application logic
+  }
+});
+
 // Default city
 searchCity("Nkayi");
 

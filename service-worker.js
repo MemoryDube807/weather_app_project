@@ -1,6 +1,6 @@
 const CACHE_NAME = "weather-app-cache-v4"; // Increment the cache version
 const urlsToCache = [
-  "./", // Ensure this matches your index.html location
+  "./",
   "./index.html",
   "./index.css",
   "./index.js",
@@ -18,6 +18,13 @@ self.addEventListener("install", (event) => {
 });
 
 self.addEventListener("fetch", (event) => {
+  const url = new URL(event.request.url);
+
+  // Bypass caching for API requests to the backend
+  if (url.origin === "https://weather-app-project-7req.onrender.com") {
+    return;
+  }
+
   event.respondWith(
     caches.match(event.request).then((response) => {
       return response || fetch(event.request);

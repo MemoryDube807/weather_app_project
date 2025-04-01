@@ -39,5 +39,11 @@ def get_forecast():
     response = requests.get(api_url)
     return jsonify(response.json())
 
+@app.route('/get-api-key', methods=['GET'])
+def get_api_key():
+    if not API_KEY:
+        return jsonify({"error": "API key is not configured"}), 500
+    return jsonify({"apiKey": API_KEY})  # Return the API key from the environment variable
+
 if __name__ == "__main__":
     app.run(debug=True)
