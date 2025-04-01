@@ -1,4 +1,4 @@
-const CACHE_NAME = "weather-app-cache-v1";
+const CACHE_NAME = "weather-app-cache-v4"; // Increment the cache version
 const urlsToCache = [
   "./", // Ensure this matches your index.html location
   "./index.html",

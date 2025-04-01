@@ -1,5 +1,3 @@
-import { API_KEY } from "./config.js";
-
 function showTemperature(response) {
   let temperatureElement = document.querySelector("#current-temperature");
   let cityElement = document.querySelector("#current-city");
