@@ -25,7 +25,7 @@ header {
   border-radius: 10px;
   margin-bottom: 20px;
   border-bottom: 1px solid #f9f7fe;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .weather-app {
@@ -44,7 +44,7 @@ header {
 
 h1 {
   font-family: "Pacifico", cursive;
-  font-size: 2.5rem; /* Reduce font size */
+  font-size: 2.5rem; 
   color: #d1e0ed; /* Deep blue for contrast */
   text-shadow: 2px 2px 8px rgba(70, 130, 180, 0.5); /* Subtle blue shadow */
   text-align: center;
@@ -52,7 +52,7 @@ h1 {
 }
 
 .current-city {
-  font-size: 28px; /* Reduce font size */
+  font-size: 28px; 
   color: #4a4a4a; /* Neutral text color */
   font-weight: bold;
   margin: 0;
@@ -63,8 +63,8 @@ h1 {
   background: #fff; /* Clean background */
   border: 1px solid #4682b4; /* Blue border */
   color: rgb(1, 6, 5);
-  font-size: 14px; /* Reduce font size */
-  padding: 15px; /* Reduce padding */
+  font-size: 14px; 
+  padding: 15px; 
   width: 75%;
   border-radius: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -78,11 +78,11 @@ h1 {
 
 .search-button {
   margin-left: 5px;
-  font-size: 0.9rem; /* Reduce font size */
+  font-size: 0.9rem; 
   background: linear-gradient(to right, #4682b4, #87ceeb); /* Blue gradient */
   border: none;
   color: white;
-  padding: 8px 15px; /* Reduce padding */
+  padding: 8px 15px; 
   line-height: 1;
   border-radius: 20px;
   font-weight: bold;
@@ -127,7 +127,7 @@ main {
 }
 
 .current-details {
-  font-size: 14px; /* Reduce font size */
+  font-size: 14px; 
   color: #555; /* Neutral text color */
   line-height: 18px; /* Adjust line height */
   text-align: left;
@@ -153,7 +153,7 @@ main {
 }
 
 .current-temperature-value {
-  font-size: 60px; /* Reduce font size */
+  font-size: 60px; 
   font-weight: bold;
   margin-left: 10px;
   display: inline-block;
@@ -162,7 +162,7 @@ main {
 }
 
 .current-temperature-unit {
-  font-size: 20px; /* Reduce font size */
+  font-size: 20px; 
   margin-top: 14px;
   font-weight: bold;
 }
@@ -170,7 +170,7 @@ main {
 .weather-forecast {
   display: flex;
   justify-content: space-around;
-  margin-top: 20px; /* Reduce margin */
+  margin-top: 20px; 
   gap: 10px; /* Add spacing between forecast days */
 }
 
@@ -182,8 +182,8 @@ main {
   ); /* White to light gray gradient */
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 8px; /* Reduce padding */
-  margin: 5px; /* Reduce margin */
+  padding: 8px; 
+  margin: 5px; 
   text-align: center;
   transition: transform 0.3s ease;
   border: 1px solid #b0c4de; /* Light blue-gray border */
@@ -208,7 +208,7 @@ main {
 }
 
 .weather-forecast-date {
-  font-size: 12px; /* Reduce font size */
+  font-size: 12px; 
   color: #777; /* Neutral text color */
   line-height: 20px;
   text-align: center;
@@ -229,7 +229,7 @@ main {
   display: flex;
   justify-content: center;
   color: #4682b4; /* Deep blue temperature color */
-  font-size: 12px; /* Reduce font size */
+  font-size: 12px; 
 }
 
 .weather-forecast-temperature {

@@ -103,17 +103,16 @@ async function getApiKey() {
       throw new Error("Failed to fetch API key");
     }
     const data = await response.json();
-    return data.apiKey; // Ensure the backend returns { apiKey: "your_api_key" }
+    return data.apiKey; // Ensure the backend returns 
   } catch (error) {
     console.error("Error fetching API key:", error);
   }
 }
 
-// Example usage
+
 getApiKey().then((apiKey) => {
   if (apiKey) {
-    // Use the API key in your application logic without logging it
-    // console.log("API Key:", apiKey); // Removed for security
+    
   }
 });
 
