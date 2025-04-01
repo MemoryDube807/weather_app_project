@@ -112,8 +112,8 @@ async function getApiKey() {
 // Example usage
 getApiKey().then((apiKey) => {
   if (apiKey) {
-    console.log("API Key:", apiKey);
-    // Use the API key in your application logic
+    // Use the API key in your application logic without logging it
+    // console.log("API Key:", apiKey); // Removed for security
   }
 });
 

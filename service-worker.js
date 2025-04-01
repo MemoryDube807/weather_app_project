@@ -22,6 +22,7 @@ self.addEventListener("fetch", (event) => {
 
   // Bypass caching for API requests to the backend
   if (url.origin === "https://weather-app-project-7req.onrender.com") {
+    event.respondWith(fetch(event.request)); // Directly fetch from the network
     return;
   }
 
